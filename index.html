@@ -1,22 +1,29 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-	<title> Dr. Dudu Raladão</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<style>
-
-body{ background-image: url("ussian_minimalistic-1538133.jpg");
+	<title> Dr. Dudu Raladao</title>
+		
+<script>
+  var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+    if(!isChrome){
+      $('#iframeAudio').remove()
+    }
+  else{
+     $('#playAudio').remove() //just to make sure that it will not have 2x audio in the background 
+  }
+  </script>
+  <style>
+body{ background-color:#056F38;
 }
 
 h1{ text-align:center;
-    font-size: 60px;
-	color: red
+    font-size: 70px;
+	color: #FAFAFA;
+	text-shadow: 9px 9px black;
 	
 }
 
 p{ text-align:center;
-   font-size:40px;
-   color:red;
+   
 }
 
 img{ display: block;
@@ -24,9 +31,11 @@ img{ display: block;
      margin-right:auto;
 	 border-radius: 50%;
 }
-
+audio{ autoplay: true;
+}
+	
 .glow {
-  font-size: 80px;
+  font-size: 70px;
   color: black;
   text-align: center;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
@@ -46,13 +55,20 @@ img{ display: block;
 
 </style>
 </head>
+		
+
 
 <body>
 			
-<h1>FELIZ ANIVERSÁRIO PIPINHO</h1>
+<h1>FELIZ ANIVERSARIO PIPINHO</h1>
 			
-<p class="glow">Sou teu fã!!!!</p>
+<p class="glow">Sou teu fa!!!!</p>
 <img src="anestesista.jpg" alt="doutor" width="300" height="300">
-</style>			
+
+<iframe src="friends.mp3" style="width:170;height:60" allow="autoplay" id="iframeAudio">
+</iframe> 
+
+
+
 </body>
 </html>
