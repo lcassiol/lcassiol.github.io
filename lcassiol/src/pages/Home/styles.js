@@ -17,17 +17,20 @@ export const Name = styled.div`
   margin-top: 15px;
   font-size: 27px;
   font-weight: bold;
+  min-width: 200px;
 `;
 
 export const Address = styled.div`
   font-size: 20px;
   color: #666;
+  min-width: 100px;
 `;
 
 export const Description = styled.div`
   margin-top: 5px;
   padding-top: 10px;
   font-size: 17px;
+  min-width: 300px;
   max-width: 540px;
   border-top: 2px solid #f0f0f0;
   color: #181818;

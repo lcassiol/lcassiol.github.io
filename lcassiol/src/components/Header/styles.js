@@ -40,4 +40,13 @@ export const HeaderButton = styled(NavLink)`
   &:hover {
     color: #fff;
   }
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+
+    &.active {
+      color: #fff;
+      font-size: 25px;
+    }
+  }
 `;
