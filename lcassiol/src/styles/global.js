@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
 
@@ -11,6 +11,7 @@ export default createGlobalStyle`
 
   html, body, #root {
     min-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   body {

@@ -27,7 +27,7 @@ export const Address = styled.div`
 `;
 
 export const Description = styled.div`
-  margin-top: 5px;
+  margin-top: 8px;
   padding-top: 10px;
   font-size: 17px;
   min-width: 300px;
