@@ -9,4 +9,8 @@ export const Wrapper = styled.div`
 export const Container = styled.div`
   padding: 34px 120px;
   flex: 1;
+
+  @media (max-width: 768px) {
+    padding: 30px 13px;
+  }
 `;
