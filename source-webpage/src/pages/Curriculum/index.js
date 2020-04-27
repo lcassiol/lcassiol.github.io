@@ -1,5 +1,7 @@
 import React from 'react';
 
+import euImg from '../../assets/me.jpg';
+
 import {
   Container,
   Education,
@@ -11,6 +13,8 @@ import {
   Level,
   Bio,
   Description,
+  ImageProfile,
+  BioContent,
 } from './styles';
 
 export default function Curriculum() {
@@ -18,16 +22,20 @@ export default function Curriculum() {
     <Container>
       <Bio>
         <Title>EU</Title>
-        <Description>
-          Gosto de me descrever como uma pessoa dedicada, busco sempre dar o meu
-          melhor onde eu estiver, me agrada quando percebo que estou conseguindo
-          contribuir com o ambiente onde me encontro. Independente da tecnologia
-          utilizada durante o trabalho busco aprender da forma que seja possivel
-          e contribuir com o meu melhor. Sempre tentando ser bem racional e
-          logico, buscando atenção aos detalhes e descansando apenas quando o
-          problema estiver resolvido. Não me prendo a tecnologia utilizada, meu
-          foco é resolver o desafio que me foi lançado.
-        </Description>
+        <BioContent>
+          <ImageProfile src={euImg} alt="cassio c" />
+          <Description>
+            Gosto de me descrever como uma pessoa dedicada, busco sempre dar o
+            meu melhor onde eu estiver, me agrada quando percebo que estou
+            conseguindo contribuir com o ambiente onde me encontro. Independente
+            da tecnologia utilizada durante o trabalho busco aprender da forma
+            que seja possivel e contribuir com o meu melhor. Sempre tentando ser
+            bem racional e logico, buscando atenção aos detalhes e descansando
+            apenas quando o problema estiver resolvido. Não me prendo a
+            tecnologia utilizada, meu foco é resolver o desafio que me foi
+            lançado.
+          </Description>
+        </BioContent>
       </Bio>
       <Education>
         <Title>FORMAÇÃO</Title>

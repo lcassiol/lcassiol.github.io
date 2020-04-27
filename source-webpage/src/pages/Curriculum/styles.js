@@ -55,8 +55,27 @@ export const Bio = styled.div``;
 
 export const Description = styled.div`
   margin-top: 40px;
-  max-width: 1115px;
+  margin-left: 10px;
+  max-width: 890px;
   box-shadow: 1px 1px 3px #9e9e9e;
   padding: 25px;
   font-size: 16px;
+`;
+
+export const ImageProfile = styled.img`
+  width: 210px;
+  height: 210px;
+  border-radius: 1%;
+  box-shadow: 1px 1px 3px #9e9e9e;
+  margin-top: 40px;
+`;
+
+export const BioContent = styled.div`
+  display: flex;
+  flex-direction: row;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
