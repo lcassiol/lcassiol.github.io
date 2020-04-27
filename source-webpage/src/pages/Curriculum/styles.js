@@ -5,7 +5,9 @@ export const Container = styled.div`
   flex-direction: column;
 `;
 
-export const Education = styled.div``;
+export const Education = styled.div`
+  margin-top: 50px;
+`;
 
 export const Title = styled.div`
   font-size: 30px;
@@ -47,4 +49,14 @@ export const Level = styled.div`
   font-weight: bold;
   padding-bottom: 4px;
   border-bottom: 2px solid #009980;
+`;
+
+export const Bio = styled.div``;
+
+export const Description = styled.div`
+  margin-top: 40px;
+  max-width: 1115px;
+  box-shadow: 1px 1px 3px #9e9e9e;
+  padding: 25px;
+  font-size: 16px;
 `;

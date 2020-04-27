@@ -14,7 +14,7 @@ export default function Home() {
         Gosto bastante de tecnologia, sempre atento aos atuais avanços e tudo
         que a tecnologia proporciona, não consigo me imaginar fazendo algo
         diferente e acredito que todas as pessoas deveriam aprender a programar
-        para estimular o pensamento logico.
+        para estimular o pensamento lógico.
       </Description>
       <Links>
         <a target="_blank" href="http://github.com/lcassiol">
