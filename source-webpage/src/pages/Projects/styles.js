@@ -23,10 +23,14 @@ export const TitleDescription = styled.div`
 export const ProjectList = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: 25px;
   justify-items: center;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1248px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 902px) {
     grid-template-columns: 1fr;
   }
 
