@@ -9,14 +9,15 @@ export const Header = styled.div`
 `;
 
 export const Title = styled.div`
-  font-size: 35px;
+  font-size: 36px;
   font-weight: bold;
   color: #009999;
 `;
 
 export const TitleDescription = styled.div`
-  margin-top: 10px;
-  font-size: 13px;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #666;
 `;
 
 export const ProjectList = styled.div``;
