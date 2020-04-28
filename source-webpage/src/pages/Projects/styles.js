@@ -38,7 +38,6 @@ export const ProjectList = styled.div`
 `;
 
 export const Project = styled.div`
-  cursor: pointer;
   position: relative;
   width: 300px;
 
@@ -74,12 +73,38 @@ export const DetailsWrapper = styled.div`
   left: 50%;
   position: absolute;
   text-align: center;
-  top: 50%;
+  top: 45%;
   transform: translate(-50%, -50%);
 `;
 
-export const DetailsTitle = styled.div``;
+export const DetailsTitle = styled.div`
+  font-weight: bold;
+  color: #f0f0f0;
+  font-size: 24px;
+`;
 
-export const DetailsText = styled.div``;
+export const DetailsText = styled.div`
+  width: 290px;
+  margin-top: 10px;
+  font-size: 12px;
+`;
 
-export const Link = styled.a``;
+export const Link = styled.a`
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #009999;
+  border-radius: 5%;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s ease;
+  background: rgb(0, 153, 153, 0.4);
+  font-size: 14px;
+
+  &:hover {
+    background: rgb(0, 153, 153, 0.9);
+  }
+`;
