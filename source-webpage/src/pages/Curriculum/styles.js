@@ -11,6 +11,7 @@ export const Education = styled.div`
 
 export const Title = styled.div`
   font-size: 30px;
+  padding-bottom: 5px;
   border-bottom: 2px solid #009980;
   max-width: 1120px;
   color: #009999;
