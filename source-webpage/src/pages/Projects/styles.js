@@ -22,10 +22,58 @@ export const TitleDescription = styled.div`
 
 export const ProjectList = styled.div``;
 
-export const Project = styled.div``;
+export const Link = styled.a``;
 
-export const ProjectImage = styled.div``;
+export const ContentDetails = styled.div`
+  background-color: #008cba; /* essa cor vc altera que a cor do overlay */
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.5s ease;
+  width: 100%;
+`;
 
-export const ProjectDescription = styled.div``;
+export const Image = styled.img`
+  display: block;
+  height: auto;
+  width: 100%;
+`;
 
-export const LinkDetails = styled.div``;
+export const Overlay = styled.div`
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+`;
+
+export const Content = styled.div`
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+`;
+
+export const DetailsText = styled.div``;
+
+export const DetailsTitle = styled.div``;
+
+export const Project = styled.div`
+  position: relative;
+
+  &:hover {
+    opacity: 1;
+  }
+`;
