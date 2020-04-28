@@ -1,7 +1,33 @@
 import React from 'react';
 
-import { Container } from './styles';
+import {
+  Container,
+  Header,
+  Title,
+  TitleDescription,
+  ProjectList,
+  Project,
+  ProjectImage,
+  ProjectDescription,
+  LinkDetails,
+} from './styles';
 
 export default function Projects() {
-  return <h1>Projetos</h1>;
+  return (
+    <Container>
+      <Header>
+        <Title>Projetos Desenvolvidos</Title>
+        <TitleDescription>
+          Aqui estou listando alguns projetos que eu criei ou contribui.
+        </TitleDescription>
+      </Header>
+      <ProjectList>
+        <Project>
+          <ProjectImage />
+          <ProjectDescription></ProjectDescription>
+          <LinkDetails />
+        </Project>
+      </ProjectList>
+    </Container>
+  );
 }
