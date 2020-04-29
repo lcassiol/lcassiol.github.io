@@ -7,10 +7,10 @@ export default function Header() {
       <Content>
         <nav>
           <HeaderButton exact to="/">
-            Inicio
+            INICIO
           </HeaderButton>
-          <HeaderButton to="/projects">Projetos</HeaderButton>
-          <HeaderButton to="/curriculum">Quem sou</HeaderButton>
+          <HeaderButton to="/projects">PROJETOS</HeaderButton>
+          <HeaderButton to="/curriculum">QUEM SOU</HeaderButton>
         </nav>
       </Content>
     </Container>

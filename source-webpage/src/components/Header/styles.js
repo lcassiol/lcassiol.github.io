@@ -23,10 +23,11 @@ export const Content = styled.div`
 
 export const HeaderButton = styled(NavLink)`
   font-weight: bold;
-  font-size: 18px;
-  color: #e8e8e8;
-  transition: color 0.3s;
+  font-size: 17px;
+  color: #e1e1e1;
+  transition: color 0.6s ease;
   text-decoration: none;
+  padding-bottom: 2px;
 
   & + a {
     margin-left: 21px;
@@ -34,19 +35,15 @@ export const HeaderButton = styled(NavLink)`
 
   &.active {
     color: #fff;
-    font-size: 25px;
+    border-bottom: 1px solid #fff;
   }
 
   &:hover {
     color: #fff;
+    border-bottom: 1px solid #fff;
   }
 
   @media (max-width: 768px) {
     font-size: 18px;
-
-    &.active {
-      color: #fff;
-      font-size: 25px;
-    }
   }
 `;
