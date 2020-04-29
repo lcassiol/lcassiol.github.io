@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import {
   Container,
   Header,
   Title,
   TitleDescription,
+  Filter,
+  FilterButton,
   ProjectList,
   Project,
   Image,
@@ -15,6 +17,9 @@ import {
 } from './styles';
 
 export default function Projects() {
+  const [projects, setProjects] = useState([]);
+  const [filter, setFilter] = useState('node');
+
   return (
     <Container>
       <Header>
@@ -23,6 +28,24 @@ export default function Projects() {
           Aqui estou listando alguns projetos que eu criei ou contribui.
         </TitleDescription>
       </Header>
+
+      <Filter>
+        <FilterButton
+          active={filter === 'node'}
+          onClick={() => setFilter('node')}
+        >
+          Node.js
+        </FilterButton>
+        <FilterButton
+          active={filter === 'react'}
+          onClick={() => setFilter('react')}
+        >
+          React
+        </FilterButton>
+        <FilterButton active={filter === 'rn'} onClick={() => setFilter('rn')}>
+          React-native
+        </FilterButton>
+      </Filter>
 
       <ProjectList>
         <Project>

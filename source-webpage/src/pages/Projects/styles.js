@@ -20,6 +20,34 @@ export const TitleDescription = styled.div`
   color: #666;
 `;
 
+export const Filter = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+
+  button + button {
+    margin-left: 10px;
+  }
+`;
+
+export const FilterButton = styled.button`
+  color: ${(props) => (props.active ? '#fff' : '#666')};
+  border: 1px solid #009999;
+  font-size: 16px;
+  font-weight: ${(props) => (props.active ? 'bold' : 'normal')};
+  padding: 8px;
+  border-radius: 5px;
+  background: ${(props) =>
+    props.active ? 'rgb(0, 153, 153, 0.84)' : 'rgb(0, 153, 153, 0.4)'};
+
+  transition: 0.7s ease;
+
+  &:hover {
+    color: #fff;
+    background: rgb(0, 153, 153, 0.6);
+  }
+`;
+
 export const ProjectList = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
