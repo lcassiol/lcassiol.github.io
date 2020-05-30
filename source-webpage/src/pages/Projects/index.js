@@ -9,6 +9,7 @@ import {
   FilterButton,
   ProjectList,
   Project,
+  ProjectTitle,
   Image,
   DetailsWrapper,
   DetailsTitle,
@@ -17,8 +18,47 @@ import {
 } from './styles';
 
 export default function Projects() {
-  const [projects, setProjects] = useState([]);
-  const [filter, setFilter] = useState('node');
+  const [projects, setProjects] = useState({
+    nodejs: [
+      {
+        name: 'FastFeet',
+        description: 'Projeto para conclusão do bootcamp 10 da Rocketseat',
+        github: 'https://github.com/lcassiol/nodejs-fastfeet',
+        image: 'https://miro.medium.com/max/730/1*Jr3NFSKTfQWRUyjblBSKeg.png',
+      },
+      {
+        name: 'FastFeet',
+        description: 'Projeto para conclusão do bootcamp 10 da Rocketseat',
+        github: 'https://github.com/lcassiol/nodejs-fastfeet',
+        image: 'https://miro.medium.com/max/730/1*Jr3NFSKTfQWRUyjblBSKeg.png',
+      },
+      {
+        name: 'FastFeet',
+        description: 'Projeto para conclusão do bootcamp 10 da Rocketseat',
+        github: 'https://github.com/lcassiol/nodejs-fastfeet',
+        image: 'https://miro.medium.com/max/730/1*Jr3NFSKTfQWRUyjblBSKeg.png',
+      },
+    ],
+    react: [
+      {
+        name: 'FastFeet',
+        description: 'Projeto para conclusão do bootcamp 10 da Rocketseat',
+        github: 'https://github.com/lcassiol/reactjs-fastfeet',
+        image:
+          'https://github.com/lcassiol/reactjs-fastfeet/blob/master/src/assets/screenshots/Deliveries.png?raw=true',
+      },
+    ],
+    reactnative: [
+      {
+        name: 'FastFeet',
+        description: 'Projeto para conclusão do bootcamp 10 da Rocketseat',
+        github: 'https://github.com/lcassiol/RN-fastfeet',
+        image:
+          'https://github.com/lcassiol/RN-fastfeet/blob/master/src/assets/screenshots/Dashboardscreen.png?raw=true',
+      },
+    ],
+  });
+  const [filter, setFilter] = useState('reactnative');
 
   return (
     <Container>
@@ -31,8 +71,8 @@ export default function Projects() {
 
       <Filter>
         <FilterButton
-          active={filter === 'node'}
-          onClick={() => setFilter('node')}
+          active={filter === 'nodejs'}
+          onClick={() => setFilter('nodejs')}
         >
           Node.js
         </FilterButton>
@@ -42,57 +82,28 @@ export default function Projects() {
         >
           React
         </FilterButton>
-        <FilterButton active={filter === 'rn'} onClick={() => setFilter('rn')}>
+        <FilterButton
+          active={filter === 'reactnative'}
+          onClick={() => setFilter('reactnative')}
+        >
           React-native
         </FilterButton>
       </Filter>
 
       <ProjectList>
-        <Project>
-          <Image src="https://images.unsplash.com/photo-1433360405326-e50f909805b3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=359e8e12304ffa04a38627a157fc3362" />
-          <div className="overlay">
-            <DetailsWrapper>
-              <DetailsTitle>Fastfeet RN</DetailsTitle>
-              <DetailsText>
-                Aplicação da entregadora ficticia fasfeet, projeto final
-                conclusão bootcamp da Rocketseat
-              </DetailsText>
-              <Link href="#">Veja no GitHub</Link>
-            </DetailsWrapper>
-          </div>
-        </Project>
-        <Project>
-          <Image src="https://images.unsplash.com/photo-1433360405326-e50f909805b3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=359e8e12304ffa04a38627a157fc3362" />
-          <div className="overlay">
-            <DetailsWrapper>
-              <DetailsTitle>Be the Hero RN</DetailsTitle>
-              <DetailsText>
-                Projeto desenvolvido durante a semana OMNI Stack 8.0 da
-                Rocketseat
-              </DetailsText>
-              <Link
-                target="_blank"
-                href="https://www.linkedin.com/in/c%C3%A1ssio-carvalho-58270853"
-              >
-                Ver no GitHub
-              </Link>
-            </DetailsWrapper>
-          </div>
-        </Project>
-        <Project>
-          <Image src="https://images.unsplash.com/photo-1433360405326-e50f909805b3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=359e8e12304ffa04a38627a157fc3362" />
-          <div className="overlay">
-            <DetailsWrapper>
-              <DetailsTitle>Ourwerewolf RN</DetailsTitle>
-              <DetailsText>
-                Projeto desenvolvido para praticar RN, junto com meu primo
-                Daniel, um jogo para interação entre um grupo de pessoas para
-                gerar muita confusão e diversão.
-              </DetailsText>
-              <Link href="#">Veja no GitHub</Link>
-            </DetailsWrapper>
-          </div>
-        </Project>
+        {projects[filter].map((project) => (
+          <Project>
+            <ProjectTitle>>> {project.name}</ProjectTitle>
+            <Image reactnative={filter === 'reactnative'} src={project.image} />
+            <div className="overlay">
+              <DetailsWrapper>
+                <DetailsTitle>{project.name}</DetailsTitle>
+                <DetailsText>{project.description}</DetailsText>
+                <Link href={project.github}>Veja no GitHub</Link>
+              </DetailsWrapper>
+            </div>
+          </Project>
+        ))}
       </ProjectList>
     </Container>
   );

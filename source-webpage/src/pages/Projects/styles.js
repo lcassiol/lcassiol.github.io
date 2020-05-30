@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Container = styled.div``;
 
@@ -34,13 +34,13 @@ export const FilterButton = styled.button`
   color: ${(props) => (props.active ? '#fff' : '#666')};
   border: 1px solid #009999;
   font-size: 16px;
-  font-weight: ${(props) => (props.active ? 'bold' : 'normal')};
+  font-weight: bold;
   padding: 8px;
   border-radius: 5px;
   background: ${(props) =>
     props.active ? 'rgb(0, 153, 153, 0.84)' : 'rgb(0, 153, 153, 0.4)'};
 
-  transition: 0.7s ease;
+  transition: background-color 0.7s;
 
   &:hover {
     color: #fff;
@@ -68,6 +68,7 @@ export const ProjectList = styled.div`
 export const Project = styled.div`
   position: relative;
   width: 300px;
+  height: 190px;
 
   .overlay {
     bottom: 0;
@@ -88,10 +89,28 @@ export const Project = styled.div`
   }
 `;
 
+export const ProjectTitle = styled.div`
+  margin-top: 5px;
+  margin-left: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #8888;
+`;
+
 export const Image = styled.img`
   display: block;
-  height: auto;
-  width: 320px;
+  transition: 0.2s ease;
+
+  height: ${(props) => (props.reactnative ? '170px' : '170px')};
+  width: ${(props) => (props.reactnative ? '120px' : '320px')};
+
+  ${(props) =>
+    props.reactnative &&
+    css`
+      margin: auto;
+      border: 1px solid #f0f0f0;
+    `}
+
   border-radius: 10px;
 `;
 
