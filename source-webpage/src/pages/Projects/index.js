@@ -26,18 +26,6 @@ export default function Projects() {
         github: 'https://github.com/lcassiol/nodejs-fastfeet',
         image: 'https://miro.medium.com/max/730/1*Jr3NFSKTfQWRUyjblBSKeg.png',
       },
-      {
-        name: 'FastFeet',
-        description: 'Projeto para conclusão do bootcamp 10 da Rocketseat',
-        github: 'https://github.com/lcassiol/nodejs-fastfeet',
-        image: 'https://miro.medium.com/max/730/1*Jr3NFSKTfQWRUyjblBSKeg.png',
-      },
-      {
-        name: 'FastFeet',
-        description: 'Projeto para conclusão do bootcamp 10 da Rocketseat',
-        github: 'https://github.com/lcassiol/nodejs-fastfeet',
-        image: 'https://miro.medium.com/max/730/1*Jr3NFSKTfQWRUyjblBSKeg.png',
-      },
     ],
     react: [
       {
@@ -58,7 +46,7 @@ export default function Projects() {
       },
     ],
   });
-  const [filter, setFilter] = useState('reactnative');
+  const [filter, setFilter] = useState('nodejs');
 
   return (
     <Container>
