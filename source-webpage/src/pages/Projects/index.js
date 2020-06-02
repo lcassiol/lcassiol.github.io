@@ -17,6 +17,8 @@ import {
   Link,
 } from './styles';
 
+import backendImage from '../../assets/backend.png';
+
 export default function Projects() {
   const [projects, setProjects] = useState({
     nodejs: [
@@ -24,7 +26,7 @@ export default function Projects() {
         name: 'FastFeet',
         description: 'Projeto para conclusão do bootcamp 10 da Rocketseat',
         github: 'https://github.com/lcassiol/nodejs-fastfeet',
-        image: 'https://miro.medium.com/max/730/1*Jr3NFSKTfQWRUyjblBSKeg.png',
+        image: backendImage,
       },
     ],
     react: [
