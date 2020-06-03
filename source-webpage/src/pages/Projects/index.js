@@ -28,6 +28,12 @@ export default function Projects() {
         github: 'https://github.com/lcassiol/nodejs-fastfeet',
         image: backendImage,
       },
+      {
+        name: 'Be the hero',
+        description: 'Projeto desenvolvido na semana omni stack da Rocketseat',
+        github: 'https://github.com/lcassiol/nodejs-be-the-hero',
+        image: backendImage,
+      },
     ],
     react: [
       {
@@ -37,6 +43,13 @@ export default function Projects() {
         image:
           'https://github.com/lcassiol/reactjs-fastfeet/blob/master/src/assets/screenshots/Deliveries.png?raw=true',
       },
+      {
+        name: 'Be the hero',
+        description: 'Projeto desenvolvido na semana omni stack da Rocketseat',
+        github: 'https://github.com/lcassiol/reactjs-be-the-hero',
+        image:
+          'https://raw.githubusercontent.com/lcassiol/reactjs-be-the-hero/master/src/assets/screeenshots/print1.png',
+      },
     ],
     reactnative: [
       {
@@ -45,6 +58,13 @@ export default function Projects() {
         github: 'https://github.com/lcassiol/RN-fastfeet',
         image:
           'https://github.com/lcassiol/RN-fastfeet/blob/master/src/assets/screenshots/Dashboardscreen.png?raw=true',
+      },
+      {
+        name: 'Be the hero',
+        description: 'Projeto desenvolvido na semana omni stack da Rocketseat',
+        github: 'https://github.com/lcassiol/RN-be-the-hero',
+        image:
+          'https://raw.githubusercontent.com/lcassiol/RN-be-the-hero/master/assets/screenshots/incidentDetail.jpg',
       },
     ],
   });
@@ -83,7 +103,7 @@ export default function Projects() {
       <ProjectList>
         {projects[filter].map((project) => (
           <Project>
-            <ProjectTitle>>> {project.name}</ProjectTitle>
+            <ProjectTitle>> {project.name}</ProjectTitle>
             <Image reactnative={filter === 'reactnative'} src={project.image} />
             <div className="overlay">
               <DetailsWrapper>

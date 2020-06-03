@@ -92,16 +92,17 @@ export const Project = styled.div`
 export const ProjectTitle = styled.div`
   margin-top: 5px;
   margin-left: 5px;
+  margin-bottom: 5px;
   font-size: 16px;
   font-weight: bold;
-  color: #8888;
+  color: #999;
 `;
 
 export const Image = styled.img`
   display: block;
   transition: 0.2s ease;
+  height: 165px;
 
-  height: ${(props) => (props.reactnative ? '170px' : '170px')};
   width: ${(props) => (props.reactnative ? '120px' : '320px')};
 
   ${(props) =>
