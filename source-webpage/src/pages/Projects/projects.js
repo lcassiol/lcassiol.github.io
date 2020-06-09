@@ -14,6 +14,12 @@ const projects = {
       github: 'https://github.com/lcassiol/nodejs-be-the-hero',
       image: backendImage,
     },
+    {
+      name: 'Ecoleta',
+      description: 'Projeto desenvolvido na semana next level da Rocketseat',
+      github: 'https://github.com/lcassiol/nodejs-ecoleta',
+      image: backendImage,
+    },
   ],
   react: [
     {
@@ -30,6 +36,13 @@ const projects = {
       image:
         'https://raw.githubusercontent.com/lcassiol/reactjs-be-the-hero/master/src/assets/screeenshots/print1.png',
     },
+    {
+      name: 'Ecoleta',
+      description: 'Projeto desenvolvido na semana next level da Rocketseat',
+      github: 'https://github.com/lcassiol/reactjs-ecoleta',
+      image:
+        'https://github.com/lcassiol/reactjs-ecoleta/raw/master/src/assets/screenshots/homeweb.png?raw=true',
+    },
   ],
   reactnative: [
     {
@@ -45,6 +58,13 @@ const projects = {
       github: 'https://github.com/lcassiol/RN-be-the-hero',
       image:
         'https://raw.githubusercontent.com/lcassiol/RN-be-the-hero/master/assets/screenshots/incidentDetail.jpg',
+    },
+    {
+      name: 'Ecoleta',
+      description: 'Projeto desenvolvido na semana next level da Rocketseat',
+      github: 'https://github.com/lcassiol/RN-ecoleta',
+      image:
+        'https://github.com/lcassiol/RN-ecoleta/raw/master/src/assets/screenshots/mapapp.png?raw=true',
     },
   ],
 };
