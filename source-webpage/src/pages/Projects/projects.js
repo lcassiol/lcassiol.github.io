@@ -20,6 +20,12 @@ const projects = {
       github: 'https://github.com/lcassiol/nodejs-ecoleta',
       image: backendImage,
     },
+    {
+      name: 'Radar Dev',
+      description: 'Projeto desenvolvido durante semana OMNI stack Rocketseat',
+      github: 'https://github.com/lcassiol/nodejs-radar-dev',
+      image: backendImage,
+    },
   ],
   react: [
     {
@@ -43,6 +49,13 @@ const projects = {
       image:
         'https://github.com/lcassiol/reactjs-ecoleta/raw/master/src/assets/screenshots/homeweb.png?raw=true',
     },
+    {
+      name: 'Radar Dev',
+      description: 'Projeto desenvolvido durante semana OMNI stack Rocketseat',
+      github: 'https://github.com/lcassiol/reactjs-radar-dev',
+      image:
+        'https://raw.githubusercontent.com/lcassiol/nodejs-radar-dev/master/src/assets/tudo.png',
+    },
   ],
   reactnative: [
     {
@@ -65,6 +78,13 @@ const projects = {
       github: 'https://github.com/lcassiol/RN-ecoleta',
       image:
         'https://github.com/lcassiol/RN-ecoleta/raw/master/src/assets/screenshots/mapapp.png?raw=true',
+    },
+    {
+      name: 'Radar Dev',
+      description: 'Projeto desenvolvido durante semana OMNI stack Rocketseat',
+      github: 'https://github.com/lcassiol/RN-radar-dev',
+      image:
+        'https://raw.githubusercontent.com/lcassiol/nodejs-radar-dev/master/src/assets/tudo.png',
     },
   ],
 };
