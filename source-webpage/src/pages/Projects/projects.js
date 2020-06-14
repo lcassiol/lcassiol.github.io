@@ -56,6 +56,14 @@ const projects = {
       image:
         'https://raw.githubusercontent.com/lcassiol/nodejs-radar-dev/master/src/assets/tudo.png',
     },
+    {
+      name: 'Typescript React Weather',
+      description:
+        'Projeto desenvolvido para praticar Typescript com ReactJS consumindo API pública',
+      github: 'https://github.com/lcassiol/reactjs-weather',
+      image:
+        'https://raw.githubusercontent.com/lcassiol/reactjs-weather/master/src/assets/screenshots/Home%20with%20details.png',
+    },
   ],
   reactnative: [
     {
@@ -84,7 +92,7 @@ const projects = {
       description: 'Projeto desenvolvido durante semana OMNI stack Rocketseat',
       github: 'https://github.com/lcassiol/RN-radar-dev',
       image:
-        'https://raw.githubusercontent.com/lcassiol/nodejs-radar-dev/master/src/assets/tudo.png',
+        'https://user-images.githubusercontent.com/39839878/72630640-807bd000-3931-11ea-9ddc-5054120530c6.jpeg',
     },
   ],
 };

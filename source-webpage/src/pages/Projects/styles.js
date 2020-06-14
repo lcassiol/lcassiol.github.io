@@ -72,7 +72,7 @@ export const Project = styled.div`
 
   .overlay {
     bottom: 0;
-    height: 100%;
+    height: 102%;
     left: 0;
     opacity: 0;
     position: absolute;
