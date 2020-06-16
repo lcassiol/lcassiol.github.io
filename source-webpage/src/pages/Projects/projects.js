@@ -64,6 +64,14 @@ const projects = {
       image:
         'https://raw.githubusercontent.com/lcassiol/reactjs-weather/master/src/assets/screenshots/Home%20with%20details.png',
     },
+    {
+      name: 'Typescript React Tic Tac Toe',
+      description:
+        'Projeto desenvolvido para praticar Typescript com ReactJS jogo da velha',
+      github: 'https://github.com/lcassiol/reactjs-tic-tac-toe',
+      image:
+        'https://raw.githubusercontent.com/lcassiol/reactjs-tic-tac-toe/master/src/assets/screenshots/endgame.png',
+    },
   ],
   reactnative: [
     {
