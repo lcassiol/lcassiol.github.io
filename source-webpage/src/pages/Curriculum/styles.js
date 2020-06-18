@@ -61,6 +61,7 @@ export const Description = styled.div`
   box-shadow: 1px 1px 3px #9e9e9e;
   padding: 25px;
   font-size: 16px;
+  text-align: justify;
 `;
 
 export const ImageProfile = styled.img`

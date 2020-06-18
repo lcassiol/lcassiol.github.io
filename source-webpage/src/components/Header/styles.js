@@ -3,7 +3,8 @@ import { NavLink } from 'react-router-dom';
 
 export const Container = styled.div`
   background: #009999;
-  padding: 20px 30px;
+  padding: 0px 30px;
+  padding-top: 20px;
   flex: 1;
   height: 64px;
   border: 1px solid #009980;
@@ -27,7 +28,7 @@ export const HeaderButton = styled(NavLink)`
   color: #e1e1e1;
   transition: color 0.6s ease;
   text-decoration: none;
-  padding-bottom: 2px;
+  padding-bottom: 12px;
 
   & + a {
     margin-left: 21px;
@@ -35,12 +36,12 @@ export const HeaderButton = styled(NavLink)`
 
   &.active {
     color: #fff;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1.7px solid #f0f0f0;
   }
 
   &:hover {
     color: #fff;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1.7px solid #fff;
   }
 
   @media (max-width: 768px) {

@@ -57,7 +57,7 @@ const projects = {
         'https://raw.githubusercontent.com/lcassiol/nodejs-radar-dev/master/src/assets/tudo.png',
     },
     {
-      name: 'Typescript React Weather',
+      name: 'React Weather',
       description:
         'Projeto desenvolvido para praticar Typescript com ReactJS consumindo API pública',
       github: 'https://github.com/lcassiol/reactjs-weather',
@@ -65,12 +65,20 @@ const projects = {
         'https://raw.githubusercontent.com/lcassiol/reactjs-weather/master/src/assets/screenshots/Home%20with%20details.png',
     },
     {
-      name: 'Typescript React Tic Tac Toe',
+      name: 'Tic Tac Toe',
       description:
-        'Projeto desenvolvido para praticar Typescript com ReactJS jogo da velha',
+        'Projeto desenvolvido para pratica do Typescript com ReactJS jogo da velha',
       github: 'https://github.com/lcassiol/reactjs-tic-tac-toe',
       image:
         'https://raw.githubusercontent.com/lcassiol/reactjs-tic-tac-toe/master/src/assets/screenshots/endgame.png',
+    },
+    {
+      name: 'Search Movies',
+      description:
+        'Projeto desenvolvido para pratica do Typescript com ReactJS consumindo uma api externa de um repositorio de filmes',
+      github: 'https://github.com/lcassiol/reactjs-searchmovies',
+      image:
+        'https://raw.githubusercontent.com/lcassiol/reactjs-searchmovies/master/src/assets/screenshots/home-resultadobusca.png',
     },
   ],
   reactnative: [

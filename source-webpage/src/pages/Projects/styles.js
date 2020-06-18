@@ -72,12 +72,12 @@ export const Project = styled.div`
 
   .overlay {
     bottom: 0;
-    height: 102%;
+    height: 89%;
     left: 0;
     opacity: 0;
     position: absolute;
     right: 0;
-    top: 0;
+    top: 26px;
     transition: 0.9s ease;
     width: 320px;
     border-radius: 10px;
