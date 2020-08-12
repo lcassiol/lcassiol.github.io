@@ -26,6 +26,12 @@ const projects = {
       github: 'https://github.com/lcassiol/nodejs-radar-dev',
       image: backendImage,
     },
+    {
+      name: 'Proffy',
+      description: 'Projeto desenvolvido para conectar alunos e professores',
+      github: 'https://github.com/lcassiol/nodejs-proffy',
+      image: backendImage,
+    },
   ],
   react: [
     {
@@ -57,12 +63,19 @@ const projects = {
         'https://raw.githubusercontent.com/lcassiol/nodejs-radar-dev/master/src/assets/tudo.png',
     },
     {
-      name: 'React Weather',
-      description:
-        'Projeto desenvolvido para praticar Typescript com ReactJS consumindo API pública',
-      github: 'https://github.com/lcassiol/reactjs-weather',
+      name: 'Proffy',
+      description: 'Projeto desenvolvido para conectar alunos e professores',
+      github: 'https://github.com/lcassiol/reactjs-proffy',
       image:
-        'https://raw.githubusercontent.com/lcassiol/reactjs-weather/master/src/assets/screenshots/Home%20with%20details.png',
+        'https://github.com/lcassiol/reactjs-proffy/raw/master/src/assets/images/screenshots/proffy-web-home.png?raw=true',
+    },
+    {
+      name: 'Search Movies',
+      description:
+        'Projeto desenvolvido para pratica do Typescript com ReactJS consumindo uma api externa de um repositorio de filmes',
+      github: 'https://github.com/lcassiol/reactjs-searchmovies',
+      image:
+        'https://raw.githubusercontent.com/lcassiol/reactjs-searchmovies/master/src/assets/screenshots/home-resultadobusca.png',
     },
     {
       name: 'Tic Tac Toe',
@@ -73,12 +86,12 @@ const projects = {
         'https://raw.githubusercontent.com/lcassiol/reactjs-tic-tac-toe/master/src/assets/screenshots/endgame.png',
     },
     {
-      name: 'Search Movies',
+      name: 'React Weather',
       description:
-        'Projeto desenvolvido para pratica do Typescript com ReactJS consumindo uma api externa de um repositorio de filmes',
-      github: 'https://github.com/lcassiol/reactjs-searchmovies',
+        'Projeto desenvolvido para praticar Typescript com ReactJS consumindo API pública',
+      github: 'https://github.com/lcassiol/reactjs-weather',
       image:
-        'https://raw.githubusercontent.com/lcassiol/reactjs-searchmovies/master/src/assets/screenshots/home-resultadobusca.png',
+        'https://raw.githubusercontent.com/lcassiol/reactjs-weather/master/src/assets/screenshots/Home%20with%20details.png',
     },
   ],
   reactnative: [
@@ -109,6 +122,13 @@ const projects = {
       github: 'https://github.com/lcassiol/RN-radar-dev',
       image:
         'https://user-images.githubusercontent.com/39839878/72630640-807bd000-3931-11ea-9ddc-5054120530c6.jpeg',
+    },
+    {
+      name: 'Proffy',
+      description: 'Projeto desenvolvido para conectar alunos e professores',
+      github: 'https://github.com/lcassiol/RN-proffy',
+      image:
+        'https://github.com/lcassiol/RN-proffy/raw/master/src/assets/images/screenshots/proffy-resultsearch.png?raw=true',
     },
   ],
 };
